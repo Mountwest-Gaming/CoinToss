@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# Loose files
+*.lastbuildstate
+*.tlog
+*.log
+*.ilk
+*/x64
+*.vs
