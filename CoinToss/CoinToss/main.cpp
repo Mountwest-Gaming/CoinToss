@@ -6,6 +6,10 @@ using namespace std;
 
 int main()
 {
+
+	//For bonus points, replace this magic number with
+	//a user defined input using a cin
+
 	int repeats = 100,
 		headCount = 0,
 		tailCount = 0,
