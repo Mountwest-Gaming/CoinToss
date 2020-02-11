@@ -6,6 +6,9 @@ using namespace std;
 
 int main()
 {
+START:
+
+	system("CLS");
 
 	//For bonus points, replace this magic number with
 	//a user defined input using a cin
@@ -15,14 +18,16 @@ int main()
 		tailCount = 0,
 		random = 0;
 
+
+	char cont = ' ';
+
+
 	srand(time(NULL));
 
 	for (int i = 0; i < repeats; i++)
 	{
 		random = rand() % 2;
-
-		cout << random;
-
+		
 		if (random == 0)
 		{
 			headCount++;
@@ -36,6 +41,14 @@ int main()
 
 	cout << endl << "Tails: " << tailCount << endl;
 	cout << "Heads: " << headCount << endl;
+
+	cout << "Would you like to go again? (y/n)" << endl;
+	cin >> cont;
+
+	if (cont == 'y' || cont == 'Y')
+		goto START;
+	else
+		return 0;
 
 	system("Pause");
 	return 0;
